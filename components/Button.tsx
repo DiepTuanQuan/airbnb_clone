@@ -13,6 +13,7 @@ const Button: React.FC<ButtonProps> = ({
   className,
   size = "small",
   outline = false,
+  
   ...props
 }) => {
   return (

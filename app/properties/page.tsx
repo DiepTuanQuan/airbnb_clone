@@ -14,7 +14,8 @@ const PropertiesPage = async () => {
   const favorites = await getFavorites();
 
   if (!user) {
-    return <EmptyState title="Unauthorized" subtitle="Please login" />;
+    return <EmptyState title="KHÔNG CÓ QUYỀN TRUY CẬP" subtitle="Hãy đăng nhập" />;
+    
   }
 
   const { listings, nextCursor } = await getProperties({ userId: user.id });
@@ -22,8 +23,8 @@ const PropertiesPage = async () => {
   if (!listings || listings.length === 0) {
     return (
       <EmptyState
-        title="No properties found"
-        subtitle="Looks like you have no properties."
+        title="Không tìm thấy"
+        subtitle=""
       />
     );
   }

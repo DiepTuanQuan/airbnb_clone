@@ -23,13 +23,13 @@ interface MapProps {
 const Map: React.FC<MapProps> = ({ center }) => {
   return (
     <MapContainer
-      center={(center as L.LatLngExpression) || [52, -0.09]}
-      zoom={center ? 4 : 2}
+      center={(center as L.LatLngExpression) || [16, 106]}
+      zoom={center ? 12 : 4}
       scrollWheelZoom={false}
       className={`h-full rounded-lg`}
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution='&copy; <a href="https://www.google.com/maps/copyright">Google Maps</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {center && <Marker position={center as L.LatLngExpression} />}

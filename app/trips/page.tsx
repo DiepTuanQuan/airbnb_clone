@@ -14,7 +14,7 @@ const TripsPage = async () => {
   const favorites = await getFavorites();
 
   if (!user) {
-    return <EmptyState title="Unauthorized" subtitle="Please login" />;
+    return <EmptyState title="KHÔNG CÓ QUYỀN TRUY CẬP" subtitle="Hãy đăng nhập" />;
   }
 
   const { listings, nextCursor } = await getReservations({ userId: user.id });
@@ -22,8 +22,8 @@ const TripsPage = async () => {
   if (listings.length === 0) {
     return (
       <EmptyState
-        title="No trips found"
-        subtitle="Looks like you haven't reserved any trips."
+        title="Trống"
+        subtitle="hiện tại đang cập nhật"
       />
     );
   }

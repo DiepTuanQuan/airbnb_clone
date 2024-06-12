@@ -22,8 +22,8 @@ const ReservationPage = async () => {
   if (listings.length === 0)
     return (
       <EmptyState
-        title="No reservations found"
-        subtitle="Looks like you have no reservations on your properties."
+       title="Không tìm thấy"
+        subtitle=""
       />
     );
 

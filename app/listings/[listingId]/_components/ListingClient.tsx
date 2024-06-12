@@ -81,7 +81,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
   }, [dateRange.endDate, dateRange.startDate, price]);
 
   const onCreateReservation = () => {
-    if (!user) return toast.error("Please log in to reserve listing.");
+    if (!user) return toast.error("Hãy đăng nhập.");
     startTransition(async () => {
       try {
         const { endDate, startDate } = dateRange;
