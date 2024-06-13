@@ -33,7 +33,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
               type="button"
               className="hidden md:block text-sm font-bold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer text-[#585858]"
             >
-              Share your home
+              Cho thuê chỗ ở qua Airbnb
             </button>
           </Modal.Trigger>
           <Menu>
@@ -60,19 +60,19 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
                   ))}
 
                   <Modal.Trigger name="share">
-                    <MenuItem label="Share your home" />
+                    <MenuItem label="Cho thuê chỗ ở qua Airbnb" />
                   </Modal.Trigger>
                   <hr />
-                  <MenuItem label="Log out" onClick={signOut} />
+                  <MenuItem label="Thoát" onClick={signOut} />
                 </>
               ) : (
                 <>
                   <Modal.Trigger name="Login">
-                    <MenuItem label="Log in" />
+                    <MenuItem label="Đăng nhập" />
                   </Modal.Trigger>
 
                   <Modal.Trigger name="Sign up">
-                    <MenuItem label="Sign up" />
+                    <MenuItem label="Đăng ký" />
                   </Modal.Trigger>
                 </>
               )}

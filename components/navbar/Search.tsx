@@ -33,10 +33,10 @@ const Search = () => {
       return `${diff} Days`;
     }
 
-    return "Any week";
+    return "tuần bất kỳ";
   }, [endDate, startDate]);
 
-  const guestLabel = guestCount ? `${guestCount} Guests` : "Add Guests";
+  const guestLabel = guestCount ? `${guestCount} Guests` : "Thêm khách";
 
   return (
     <Modal>
@@ -47,7 +47,7 @@ const Search = () => {
         >
           <div className="flex flex-row justify-between items-center">
             <small className="text-sm font-bold px-6 text-[#585858]">
-              {country ? country : "Anywhere"}
+              {country ? country : "Địa điểm bất kỳ"}
             </small>
 
             <small className="hidden sm:block text-sm font-bold px-6 border-x-[1px] flex-1 text-center text-[#585858]">
